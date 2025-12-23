@@ -1,85 +1,32 @@
-# --- Node / Next.js ---
-FrontEnd/node_modules/
-FrontEnd/.next/
-FrontEnd/out/
-FrontEnd/.turbo/
+# Python
+__pycache__/
+*.pyc
+env/
+venv/
+class/
 
-# --- Python / Flask ---
-BackEnd/.venv/
-BackEnd/venv/
-BackEnd/env/
-BackEnd/class/
-**/__pycache__/
-**/*.py[cod]
+# Environment variables
+.env
+.env.*
+!.env.example
 
-# --- Environments ---
-**/.env
-**/.env.local
-**/.env.*.local
-
-# --- Logs & coverage ---
-logs/
-*.log
-npm-debug.log*
-yarn-debug.log*
-pnpm-debug.log*
-coverage/
-
-# --- Builds / dist ---
+# Node / Next.js
+node_modules/
+.next/
 dist/
 build/
 
-# --- OS / Editor ---
-.DS_Store
-Thumbs.db
-.vscode/
-
-# --- User request: do NOT push requirements file ---
-BackEnd/requirments.txt
-BackEnd/requirements.txt
-# Node / Next.js (FrontEnd)
-FrontEnd/node_modules/
-FrontEnd/.next/
-FrontEnd/.turbo/
-FrontEnd/.vercel/
-FrontEnd/.pnpm-store/
-FrontEnd/.eslintcache
-FrontEnd/.cache/
-FrontEnd/coverage/
-FrontEnd/dist/
-FrontEnd/build/
-FrontEnd/.env
-FrontEnd/.env.*
-
 # Logs
 *.log
-npm-debug.log*
-yarn-debug.log*
-yarn-error.log*
-pnpm-debug.log*
+logs/
 
-# Python (BackEnd)
-BackEnd/__pycache__/
-BackEnd/**/*.py[cod]
-BackEnd/.pytest_cache/
-BackEnd/.mypy_cache/
-BackEnd/.ruff_cache/
-BackEnd/.coverage
-BackEnd/coverage/
-BackEnd/build/
-BackEnd/dist/
-BackEnd/*.egg-info/
-BackEnd/.env
-BackEnd/.venv/
-BackEnd/venv/
-BackEnd/env/
-BackEnd/requirements.txt
-# Virtual environment folder inside BackEnd
-BackEnd/class/
+# Database
+*.db
+*.sqlite
+*.sql
 
-# IDE/editor
-.vscode/    
-*.code-workspace
+# IDE
+.vscode/
 .idea/
 
 # OS
