@@ -24,6 +24,14 @@ def create_app():
     
     # Enable CORS for frontend communication
     CORS(app, resources={r"/api/*": {"origins": "*"}})
+
+      # ✅ ROOT ROUTE (IMPORTANT)
+    @app.route("/")
+    def home():
+        return {
+            "message": "Backend is running 🚀",
+            "status": "success"
+        }
     
     #Register blueprints
     app.register_blueprint(student_router, url_prefix="/api")
