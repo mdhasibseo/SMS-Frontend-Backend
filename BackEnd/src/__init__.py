@@ -33,7 +33,7 @@ def create_app():
     app.register_blueprint(auth_router, url_prefix="/api")
 
     # configure
-    app.config['SQLALCHEMY_DATABASE_URI'] = 'mysql+pymysql://root:@localhost/sms'
+    app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:///database.db'
     app.config['JWT_SECRET_KEY'] = 'super-secret-key'  # Change this to a secure key in production
     app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
     app.config['JWT_ACCESS_TOKEN_EXPIRES'] = timedelta(days=7)

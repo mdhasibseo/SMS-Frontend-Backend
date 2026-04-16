@@ -97,7 +97,7 @@ export default function AdminLayout({ children }: { children: React.ReactNode })
               </div>
               <div className="flex flex-col group-data-[collapsible=icon]:hidden">
                 <span className="font-black text-xl bg-gradient-to-r from-blue-700 via-indigo-700 to-purple-700 dark:from-blue-400 dark:via-indigo-400 dark:to-purple-400 bg-clip-text text-transparent tracking-tight">
-                  EduAdmin
+                  MD Hasib
                 </span>
                 <span className="text-xs text-slate-500 dark:text-slate-400 font-bold tracking-wider uppercase">
                   Pro Dashboard

@@ -294,7 +294,7 @@ Then update the DB URI in `BackEnd/src/__init__.py`:
 
 ```python
 # Replace with your MySQL credentials
-app.config['SQLALCHEMY_DATABASE_URI'] = 'mysql+pymysql://root:YOUR_PASSWORD@localhost/sms_task1'
+app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:///database.db'
 ```
 
 ---
