@@ -1,6 +1,6 @@
 import type { RequestInit } from "next/dist/server/web/spec-extension/request";
 
-const API_BASE_URL = (process.env.NEXT_PUBLIC_API_BASE_URL || "http://localhost:5000/api").replace(/\/$/, "")
+const API_BASE_URL = (process.env.NEXT_PUBLIC_API_BASE_URL || "https://sms-frontend-backend.onrender.com/api").replace(/\/$/, "")
 
 const TOKEN_KEY = "authToken"
 const ADMIN_KEY = "adminProfile"
